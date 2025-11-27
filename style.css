@@ -1,0 +1,112 @@
+/* ===== Configuração geral ===== */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f1f3f6;
+    display: flex;
+}
+
+/* ===== Barra lateral ===== */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 12px 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .active {
+    background-color: rgba(255, 255, 255, 0.35);
+    font-weight: bold;
+}
+
+/* ===== Conteúdo principal ===== */
+.content {
+    padding: 30px;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* ===== Lista de pedidos ===== */
+.lista-pedidos {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.pedido-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.pedido-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.18);
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.info p {
+    margin: 4px 0 0;
+    color: #666;
+}
+
+/* ===== Status ===== */
+.status {
+    padding: 7px 13px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.pendente {
+    background-color: #d64545;
+}
+
+.pronto {
+    background-color: #2ecc71;
+}
